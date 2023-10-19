@@ -198,6 +198,7 @@ class OverlayWindow extends EventEmitter {
     this.hidden = false;
 
     if (!this.initialized) {
+      console.log("showing window..");
       this.initialized = true;
       lib.start(
         this._overlayWindow.getNativeWindowHandle(),
